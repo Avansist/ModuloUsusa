@@ -1,0 +1,43 @@
+﻿@model IEnumerable<ModuloUsuarios.Models.Entities.Usuario>
+
+@{
+    ViewData["Title"] = "";
+}
+
+<h1>Lista de Usuarios</h1>
+
+<p>
+    <a asp-action="CrearUsuario">Crear Nuevo</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.UsuarioId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Nombre)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Correo)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Telefono)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Contraseña)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ConfirmarContraseña)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Estado)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.RolId)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+
+</table>
